@@ -1,0 +1,239 @@
+/* Estilos generales */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del menú */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Menú alineado a la derecha */
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+/* Estilos del menú */
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 20px; /* Espacio entre los elementos del menú */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Estilos para el nombre a la derecha */
+.nombre-derecha {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: darkblue; 
+    padding: 10px 20px;
+    border-radius: 20px; 
+    text-align: center;
+}
+
+/* Sección de presentación */
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 120px auto;
+    gap: 82px;
+}
+
+/* Sección dinámica de la imágen */
+.presentacion_imagen {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 120px auto;
+}
+
+/* Sección de imagen a la izquierda */
+.imagen {
+    width: 40%;
+    display: flex;
+    border-radius: 50px;
+    justify-content: flex-start;
+}
+
+.imagen img {
+    width: 400px;
+    border-radius: 50px;
+    position: relative;
+}
+
+/* Sección de texto a la derecha */
+.info {
+    width: 55%;
+    text-align: left;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.info h1 span {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 1.2rem;
+    color: #444;
+    display: block;
+    margin-bottom: 5px; 
+    white-space: pre-line; 
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: darkblue;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    justify-content: center;
+    display: flex;
+    font-size: 1.2rem;
+    border-radius: 50px;
+}
+
+.btn i {
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    background-color: #5f5f61;
+    transform: scale(1.05);
+    border-radius: 50px;
+}
+
+/* Iconos sociales */
+.redes-inferiores {
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    border-radius: 50px;
+}
+
+.redes-inferiores a {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    border-radius: 50px;
+}
+
+.redes-inferiores a:hover {
+    background-color: #5f5f61;
+    transform: scale(1.1);
+    border-radius: 50px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(210, 209, 209, 0.963);
+    color: black;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav {
+        padding: 10%;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .nombre-derecha {
+        margin-top: 10px;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .info, .imagen {
+        width: 100%;
+    }
+
+    .imagen {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
